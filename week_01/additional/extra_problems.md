@@ -87,6 +87,6 @@ if (a+b == 0.3) {
 ```
 Input:  3  // Wednesday
         4 31  // time in hours and minutes
-        1092  // minutes to elapse
-Output: ...
+        4092  // minutes to elapse
+Output: Saturday
 ```

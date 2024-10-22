@@ -45,3 +45,11 @@ g++ <file_name>.cpp -o <exe_name>.exe
 - While-цикли
 
 - [Задание в час](https://classroom.github.com/a/5ezkKPoU)
+
+## Седмица 04 - Функции
+
+- Дефиниране на функции и стекови рамки на функции
+
+- Побитови оператори
+
+- [Задание в час](https://classroom.github.com/a/H2DrGP8s)

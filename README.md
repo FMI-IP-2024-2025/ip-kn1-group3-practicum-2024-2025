@@ -63,3 +63,11 @@ g++ <file_name>.cpp -o <exe_name>.exe
 - Сортиране на едномерни масиви
 
 - [Задание в час](https://classroom.github.com/a/3cCYRpjG)
+
+## Седмица 06 - Низове
+
+- Указатели
+
+- Низове и представянето им в паметта
+
+- [Задание в час](https://classroom.github.com/a/fIAibyK6)

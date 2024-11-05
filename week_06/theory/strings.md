@@ -61,8 +61,10 @@ std::cin.getline(str2,129);
 
 ```c++
 char const* str = "Pointers are cool!";
+//*str == *(str+0) == str[0]
 while (*str) {
   std::cout << *str;
+  str++;  //преместваме указателя с един символ надясно
 }
 ```
 

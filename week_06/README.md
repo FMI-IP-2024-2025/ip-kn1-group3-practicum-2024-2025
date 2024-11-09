@@ -129,14 +129,14 @@ Output: Ebiil, tloia!
 Напишете програма, която приема схема (която ще бъде по-опростен вид на регулярен израз) и низ и извежда дали низът отговаря на схемата. Например за схемата:
 ```
 Hello, world.
-> Hello, world!  -> true
-> Hello, world!! -> false
-> Hello, world   -> false
+> "Hello, world!"  -> true
+> "Hello, world!!" -> false
+> "Hello, world"   -> false
 
 I lo*ve FMI
-> I love FMI         -> true
-> I loooooooove FMI  -> true
-> I lve FMI          -> false
+> "I love FMI"         -> true
+> "I loooooooove FMI"  -> true
+> "I lve FMI"          -> false
 ```
 където:
 - `.` отговаря на който и да е един символ;

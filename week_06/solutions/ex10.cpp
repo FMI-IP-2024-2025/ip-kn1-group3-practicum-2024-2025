@@ -2,41 +2,34 @@
 #include <cstring>
 
 bool isMatch(char const* regex, char const* str) {
-  size_t len = strlen(str);
-  size_t rlen = strlen(regex);
-
   //хваща случая, когато regex започва с *
   //(произволен брой),
   //което е еквивалентно на многократно
   //повторение на празния низ
   size_t i = 0, j = 0;
-  while (rlen > 0 && regex[j] == '*') j++;
+  while (regex[j] != '\0' && regex[j] == '*') j++;
 
-  while (i < len && j < rlen) {
+  while (str[i] != '\0' && regex[j] != '\0') {
 
-    if (regex[j] == '.') {
+    if (regex[j] == '.' || str[i] == regex[j]) {
       ++i;
       ++j;
     }
     else if (regex[j] == '*') {
       char symbol = str[i];
       ++i;
-      while (i < len && str[i] == symbol) {
+      while (i != '\0' && str[i] == symbol) {
         ++i;
       }
       ++j;
     }
-    else if (regex[j] != str[i]) {
-      return false;
-    }
     else {
-      ++i;
-      ++j;
+      return false;
     }
 
   }
 
-  return i == len && j == rlen;
+  return str[i] == regex[j];
 }
 
 int main() {

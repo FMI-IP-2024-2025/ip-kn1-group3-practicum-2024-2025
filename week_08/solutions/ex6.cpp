@@ -2,7 +2,7 @@
 
 unsigned int const N = 3;
 
-void tranpose(int matrix[][N]) {
+void transpose(int matrix[][N]) {
   for (unsigned int i = 0; i < N; ++i) {
     for (unsigned int j = i+1; j < N; ++j) {
       int temp = matrix[i][j];
@@ -27,7 +27,7 @@ int main() {
                        {4,5,6},
                        {7,8,9} };
 
-  tranpose(matrix);
+  transpose(matrix);
   print(matrix);
 
   return 0;

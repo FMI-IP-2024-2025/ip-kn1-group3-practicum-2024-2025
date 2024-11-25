@@ -6,7 +6,7 @@ unsigned int const N = 3;
 //градуса по посока на часовниковата стрелка,
 //е първо да я транспонираме, а след това
 //да обърнем местата на колоните ѝ
-void tranpose(int matrix[][N]) {
+void transpose(int matrix[][N]) {
   for (unsigned int i = 0; i < N; ++i) {
     for (unsigned int j = i+1; j < N; ++j) {
       int temp = matrix[i][j];
@@ -17,7 +17,7 @@ void tranpose(int matrix[][N]) {
 }
 
 void rotate90DegreesClockwise(int matrix[N][N]) {
-  tranpose(matrix);
+  transpose(matrix);
   for (unsigned int j = 0; j < N/2; ++j) {
     for (unsigned int i = 0; i < N; ++i) {
       std::swap(matrix[i][j], matrix[i][N-1-j]);

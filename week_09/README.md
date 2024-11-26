@@ -34,7 +34,7 @@ $$
 \begin{equation}
   x^n =
     \begin{cases}
-    x^2.x^{n/2}, & n \mod 2 \equiv 0  \\
+    (x^2)^{n/2}, & n \mod 2 \equiv 0  \\
     x.x^{n-1}, & n \mod 2 \equiv 1  \\
     \end{cases}
 \end{equation}

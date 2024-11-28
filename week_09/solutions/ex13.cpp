@@ -4,8 +4,8 @@
 unsigned int const SIZE = 4;
 
 int sign(int i) {
-  if (i%2==0) return -1;
-  return 1;
+  if (i%2==0) return 1;
+  return -1;
 }
 
 int determinant(int matrix[][SIZE], int size) {

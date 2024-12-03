@@ -95,3 +95,7 @@ g++ <file_name>.cpp -o <exe_name>.exe
 - Примитивна и опашкова рекурсия
 
 - [Задание в час](https://classroom.github.com/a/e1aUl34w)
+
+## Седмица 10 - Търсене с връщане назад
+
+- [Задание в час](https://classroom.github.com/a/0PNRvkZ0)

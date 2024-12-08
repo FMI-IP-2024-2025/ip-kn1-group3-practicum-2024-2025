@@ -30,7 +30,7 @@ int main() {
   //забележете, че не можем да използваме strlen,
   //понеже резултата от нея не е задължително
   //да се знае по време на компилация!
-  bool subset[sizeof(str)] {};
+  bool subset[sizeof(str)-1] {};
   strings(str,6,subset,0,5,0);
 
   return 0;

@@ -105,3 +105,5 @@ g++ <file_name>.cpp -o <exe_name>.exe
 - Заделяне и освобождаване на динамична памет
 
 - Указатели. Псевдоними (референции)
+
+- [Задание в час](https://classroom.github.com/a/eshFjkUZ)

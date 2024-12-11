@@ -40,18 +40,19 @@ int main() {
   //като резултат. най-лошият случай е, когато 
   //низът се състои само от разделители и имаме
   //само празни низове
-  char** dest = new char*[strlen(str)+1] {};
+  int size = strlen(str)+1;
+  char** dest = new char*[size] {};
 
   split(str,dest,'$');
 
   int index = 0;
-  while (dest[index] != nullptr) {
+  while (dest[index] != nullptr && index < size) {
     std::cout << dest[index] << std::endl;
     index++;
   }
 
   index = 0;
-  while (dest[index] != nullptr) {
+  while (dest[index] != nullptr && index < size) {
     delete[] dest[index];
     index++;
   }

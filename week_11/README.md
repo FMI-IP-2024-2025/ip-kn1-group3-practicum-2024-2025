@@ -150,7 +150,7 @@ std::cout << *ptrptr;
 
 ## Задача 8
 
-Да се напише функция `void split(char const* str, char** dest, char delim)`, която разделя `str` на множество от низове, които се записват в `dest` спрямо разделителя `delim`.
+Да се напише функция `void split(char const* str, char** dest, char delim)`, която разделя `str` на множество от низове, които се записват в `dest`, спрямо разделителя `delim`.
 
 Пример:
 ```c++

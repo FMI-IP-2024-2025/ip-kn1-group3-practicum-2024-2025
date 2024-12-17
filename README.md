@@ -107,3 +107,9 @@ g++ <file_name>.cpp -o <exe_name>.exe
 - Указатели. Псевдоними (референции)
 
 - [Задание в час](https://classroom.github.com/a/eshFjkUZ)
+
+## Седмица 12 - Подготовка за второ контролно
+
+- Масиви. Низове. Матрици
+
+- [Задание в час](https://classroom.github.com/a/UMQRnebQ)

@@ -36,6 +36,11 @@ bool linear2(unsigned int const matrix[][SIZE]) {
     //matrix[j], 0 <= j <= SIZE-1
     for (unsigned int j = 0; j < SIZE; ++j) {
 
+      //не искаме да проверяваме дали един и същи ред
+      //е линейна комбинация на себе си, тъй като
+      //това е тривиално вярно
+      if (i==j) continue;
+
       bool isLinearCombination = true;
       unsigned int k = matrix[i][0] / matrix[j][0];
 
